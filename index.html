@@ -25,10 +25,11 @@
             </div>
             <div class="contact">
                 <h3>Email Us</h3>
-                <form>
+                <div class="alert">Your Message has been sent</div>
+                <form id="contactForm">
                     <p>
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" required>
                     </p>
                     <p>
                         <label for="company">Company</label>
@@ -36,7 +37,7 @@
                     </p>
                     <p>
                         <label for="email">Email Address</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </p>
                     <p>
                         <label for="phone">Phone Number</label>
@@ -46,13 +47,15 @@
                         <label for="message">Message</label>
                         <textarea name="message" id="message" cols="30" rows="5"></textarea>
                     </p>
-                    <p  class="full">
-                        <button>Submit</button>
+                    <p class="full">
+                        <button type="submit">Submit</button>
                     </p>
                 </form>
             </div>
         </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

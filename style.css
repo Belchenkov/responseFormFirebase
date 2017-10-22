@@ -68,6 +68,11 @@ ul {
     display: block;
 }
 
+.contact form input,
+.contact form textarea {
+    font-size: 18px;
+}
+
 .contact form p {
     margin: 0;
 }
@@ -100,6 +105,15 @@ ul {
     transition: all .4s ease-in-out;
 }
 
+.alert {
+    text-align: center;
+    padding: 10px;
+    background: #79c879;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
+
 /* LARGE SCREEN */
 @media(min-width: 700px) {
     .wrapper {
@@ -117,3 +131,4 @@ ul {
         text-align: left;
     }
 }
+
